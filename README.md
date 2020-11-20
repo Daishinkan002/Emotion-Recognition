@@ -44,12 +44,8 @@ software to predict emotion is 66%
 - TensorFlow (>= 1.1.0) Installation
 - OpenCV (python3-version) Installation
 
-
-## USAGE :
-To run the demo, just type :
-python main.py
-
-
+## USAGE
+ - Colab will be uploaded soon
 
 
 ## REFERENCES :
