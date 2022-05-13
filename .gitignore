@@ -159,5 +159,9 @@ cython_debug/
 # Course Content -->
 Course*
 
+
+# Dataset
+data/fer2013.csv
+
 # Sample Testing Files
 test_codes*

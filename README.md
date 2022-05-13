@@ -38,6 +38,8 @@ custom specific software. In this software people can upload a photo
 or can take a photo for predicting emotion. The accuracy of this
 software to predict emotion is 66%
 
+## Download Dataset
+`wget https://drive.google.com/file/d/1dN8UoaafDGGVfta6XPPQg99FYKL2AiA-/view?usp=sharing -P data/`
 
 ## DEPENDENCIES :
 - Python (>= 3.3)
