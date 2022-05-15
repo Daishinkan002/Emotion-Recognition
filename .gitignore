@@ -159,5 +159,14 @@ cython_debug/
 # Course Content -->
 Course*
 
+
+# Models
+models/emotion_detection/*
+
+# Test Images
+Test_Images
+cap.jpg
+cap.png
+
 # Sample Testing Files
 test_codes*

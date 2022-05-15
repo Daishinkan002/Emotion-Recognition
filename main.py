@@ -24,7 +24,7 @@ def image_captured(img_index):
         key = cv2.waitKey(1)
     
         if key == ord('s'):
-            cv2.imwrite("cap.png",frame)
+            cv2.imwrite("cap.jpg",frame)
             img_index = 0
             break
         elif key == ord('q'):
@@ -53,7 +53,7 @@ def take_photo():
             print("\n\n.........Program Halted ............\n\n")
             sys.exit()
         elif img_index == 0:
-            show_image("cap.png")
+            show_image("cap.jpg")
             cv2.destroyWindow("Image")
             
             mood_confirm = input("Is this Image Okay for the Mood Prediction(y or n) : ")
@@ -69,12 +69,14 @@ def take_photo():
 
 
 if __name__ == "__main__":
+    
     approval = 1
+    face_detection_model_path = 'models/face_detection/haarcascade_frontalface_alt.xml'
     choice = int(input("\n\n1.Take Photo\n2.Upload Photo\n\nEnter your choice : "))
     if choice == 1:
         while(approval):
             take_photo()
-            approval = approve_face.count_face('cap.png')
+            approval = approve_face.count_face('cap.jpg', face_detection_model_path)
             print("No. of face Detected = ",approval)
             if(approval == 0):
                 again = input("Do you want to take photo again ?(y or n) : ")
@@ -85,13 +87,13 @@ if __name__ == "__main__":
                     sys.exit("\n\n.............Thankyou for Visiting Us.........\n\n")
             else:
                 break
-        emotion_detector.predict('cap.png')
+        emotion_detector.predict('cap.jpg')
 
     elif choice == 2:
         image_name = input("Enter Image Name : ")
         img = cv2.imread(image_name)
         if(type(img) is np.ndarray):
-            approval = approve_face.count_face(image_name)
+            approval = approve_face.count_face(image_name, face_detection_model_path)
             print("No. of faces found = ",approval)
             if(approval == 0):
                 print("\n\nImage is not suitable for predicting Emotions\n\n")

@@ -3,11 +3,11 @@ import cv2
 import argparse
 import numpy as np
 
-def count_face(image_name):
+def count_face(image_name, face_detection_model_path):
     img = cv2.imread(image_name)
 
     face_cascade = cv2.CascadeClassifier()
-    if not face_cascade.load(cv2.samples.findFile('data/haarcascades/haarcascade_frontalface_alt.xml')):
+    if not face_cascade.load(cv2.samples.findFile(face_detection_model_path)):
         print("Error loading face cascade file")
         exit(0)
 
