@@ -45,7 +45,7 @@ software to predict emotion is 66%
 - OpenCV (python3-version) Installation
 
 ## USAGE
- - python main.py
+- `python main.py`
 
 
 ## REFERENCES :
