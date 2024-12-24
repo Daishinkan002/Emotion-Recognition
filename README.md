@@ -6,6 +6,8 @@ Emotion recognition is the process of identifying human emotion. People vary wid
 ![alt text](https://github.com/Daishinkan002/Emotion-Recognition/blob/master/Working_Demo_Images/demo_happyimg.png)
 
 
+![alt text](https://github.com/Daishinkan002/Emotion-Recognition/blob/master/Working_Demo_Images/demo_neutralimg.png)
+
 
 ## OBJECTIVE :
 This is a user friendly software to increase people’s comfort of learning things.
