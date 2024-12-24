@@ -3,9 +3,11 @@
 
 Emotion recognition is the process of identifying human emotion. People vary widely in their accuracy at recognizing the emotions of others. Use of technology to help people with emotion recognition is a relatively nascent research area. Generally, the technology works best if it uses multiple modalities in context.
 
+
+### HAPPY --
 ![alt text](https://github.com/Daishinkan002/Emotion-Recognition/blob/master/Working_Demo_Images/demo_happyimg.png)
 
-
+### NEUTRAL --
 ![alt text](https://github.com/Daishinkan002/Emotion-Recognition/blob/master/Working_Demo_Images/demo_neutralimg.png)
 
 
